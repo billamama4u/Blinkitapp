@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="6.5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="6.5dp"
+                android:layout_marginBottom="6.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvorderdate"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:text="01-06-2024"
+                    android:textColor="@color/black"
+                    android:textSize="16.9dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:backgroundTint="@color/yellow"
+                    android:background="@drawable/brcart_new"
+                    android:gravity="center"
+                    android:id="@+id/status"
+                    android:text="Ordered"
+                    android:textColor="#fff"
+                    android:textSize="16.9sp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="6.5dp"
+                android:layout_marginBottom="6.5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvorderitems"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:text="Vegetables,fruits,juices,milk,curd,lays,silk...."
+                    android:textColor="@color/black"
+                    android:textSize="16.9dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/price"
+                    android:text="₹500"
+                    android:textColor="@color/green"
+                    android:textSize="16.9sp"/>
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

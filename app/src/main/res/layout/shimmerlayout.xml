@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1product"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_stroke"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            app:cardCornerRadius="13dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/iv1slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="156dp"
+                    android:background="#dddddd"
+                    app:iss_auto_cycle="false"
+                    app:iss_text_align="CENTRE" />
+
+                <TextView
+                    android:id="@+id/tv1producttitle"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#dddddd"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="19.5sp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvpro1ductquantity"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:background="#ddd"
+                    android:textColor="#6f6f6f"
+                    android:textSize="15.6dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvp1rice"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:text=""
+                            android:background="#ddd"
+                            android:textColor="@color/black"
+                            android:textSize="15.6sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/editb1tn"
+                            android:layout_width="78dp"
+                            android:layout_height="30dp"
+                            android:background="#ddd"
+                            android:gravity="center"
+                            android:padding="5.20dp"
+                            android:text=""
+                            android:textColor="@color/green"
+                            android:textSize="14.3sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/cvprod1uct"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_stroke"
+            android:backgroundTint="@color/white"
+            android:elevation="2dp"
+            app:cardCornerRadius="13dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/ivslid1er"
+                    android:layout_width="match_parent"
+                    android:layout_height="156dp"
+                    android:background="#dddddd"
+                    app:iss_auto_cycle="false"
+                    app:iss_text_align="CENTRE" />
+
+                <TextView
+                    android:id="@+id/tvproductti1tle"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#dddddd"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="19.5sp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tvproductquantit1y"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:background="#ddd"
+                    android:textColor="#6f6f6f"
+                    android:textSize="15.6dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvprice1"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:text=""
+                            android:background="#ddd"
+                            android:textColor="@color/black"
+                            android:textSize="15.6sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/edi1tbtn"
+                            android:layout_width="78dp"
+                            android:layout_height="30dp"
+                            android:background="#ddd"
+                            android:gravity="center"
+                            android:padding="5.20dp"
+                            android:text=""
+                            android:textColor="@color/green"
+                            android:textSize="14.3sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
